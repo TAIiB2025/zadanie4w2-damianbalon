@@ -1,0 +1,22 @@
+<form #formularz="ngForm" (ngSubmit)="onSubmit(formularz)">
+    <div>
+        <label>Nazwa: </label>
+        <input type="text" name="nazwa" [(ngModel)]="uslugaBody.nazwa">
+    </div>
+    <div>
+        <label>Wykonawca: </label>
+        <input type="text" name="wykonawca" [(ngModel)]="uslugaBody.wykonawca">
+    </div>
+    <div>
+        <label>Rodzaj: </label>
+        <input type="text" name="rodzaj" [(ngModel)]="uslugaBody.rodzaj">
+    </div>
+    <div>
+        <label>Rok: </label>
+        <input type="number" name="rok" [(ngModel)]="uslugaBody.rok">
+    </div>
+    <div>
+        <input type="submit" name="submit" value="Zapisz">
+        <input type="button" name="anuluj" value="Anuluj" (click)="onAnuluj()">
+    </div>
+</form>

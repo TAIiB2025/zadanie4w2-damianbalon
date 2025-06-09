@@ -1,0 +1,20 @@
+<div *ngIf="obiekt != null">
+    <div>
+        Id: <strong>{{obiekt.id}}</strong>
+    </div>
+    <div>
+        Nazwa: <strong>{{obiekt.nazwa}}</strong>
+    </div>
+    <div>
+        Wykonawca: <strong>{{obiekt.wykonawca}}</strong>
+    </div>
+    <div>
+        Rodzaj: <strong>{{obiekt.rodzaj}}</strong>
+    </div>
+    <div>
+        Rok: <strong>{{obiekt.rok}}</strong>
+    </div>
+    <div>
+        Akcje: <button (click)="onUsunClick()">Usuń</button>, <a routerLink="form">Edycja</a>, <a routerLink="/">Powrót</a>
+    </div>
+</div>
