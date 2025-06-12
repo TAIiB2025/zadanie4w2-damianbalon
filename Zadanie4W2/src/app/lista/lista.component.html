@@ -1,8 +1,17 @@
+
+
 <div>
     <a routerLink="form">Dodaj</a>
 </div>
+
+<input [(ngModel)]="fraza" placeholder="Szukaj po nazwie" />
+<button (click)="filtruj()">Szukaj</button>
+<hr />
+
+
 <hr />
 <table border="1">
+
     <thead>
         <tr>
             <th>ID</th>
